@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>isPalindrome</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let arr = prompt("nhap chuoi ky tu").split("");
+        alert(isPalindrome(arr));
+    }
+    function isPalindrome(arr){
+        for(let x=0;x<arr.length/2;x++){
+            if (arr[x]!=arr[arr.length-1-x]){
+                return false;
+            }
+        }return true;
+    }
+</script>
+</body>
+</html>
